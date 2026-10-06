@@ -1,7 +1,7 @@
 // ===== GV3D PRINT SETTINGS =====
 // Replace these two values before publishing.
-const WHATSAPP_NUMBER = "919XXXXXXXXX"; // country code + number, digits only
-const GOOGLE_FORM_URL = "https://forms.google.com/"; // replace with your actual Google Form link
+const WHATSAPP_NUMBER = "919715737056"; // country code + number, digits only
+const GOOGLE_FORM_URL = "https://forms.gle/9FuLeDEdFJSZoPUb9/"; // replace with your actual Google Form link
 
 const wa = (text) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 const generic = `Hello GV3D Print! I would like to enquire about your 3D printing services.`;
