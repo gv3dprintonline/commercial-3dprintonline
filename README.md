@@ -1,45 +1,32 @@
-# GV3D Print — GitHub Pages Website
+# GV3D Print — Enhanced Commercial GitHub Pages Site
 
-A responsive static commercial website for GV3D Print.
-
-## Publish on GitHub Pages
-
-1. Create a GitHub account if you don't already have one.
-2. Create a **public repository** named:
-   `gv3dprint.github.io`
-   (The repository name must match your GitHub username if you want the root URL.)
-3. Upload `index.html`, `style.css`, `script.js`, and the `assets` folder.
-4. Go to **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select `main` and `/ (root)`, then Save.
-7. Your website will appear at:
-   `https://YOUR-GITHUB-USERNAME.github.io/`
+## Added
+- Dynamic product category filtering
+- Product search
+- Animated hero / hover interactions
+- Custom model showcase
+- WhatsApp ordering buttons
+- Quick custom-print WhatsApp enquiry
+- Google Form route for detailed enquiries
+- Responsive mobile navigation
+- Mobile-first responsive layout
 
 ## Before publishing
+Edit `script.js`:
 
-Open `script.js` and change:
-
+1. Replace:
 `const WHATSAPP_NUMBER = "919XXXXXXXXX";`
 
-to your real WhatsApp number using country code and digits only.
+with your actual WhatsApp number.
 
-Example:
-`const WHATSAPP_NUMBER = "919876543210";`
+2. Replace:
+`const GOOGLE_FORM_URL = "https://forms.google.com/";`
 
-Also replace the sample product names, descriptions and prices in `index.html`.
+with your actual Google Form URL.
 
-## Images
+3. Edit sample products/prices in `index.html`.
 
-The supplied version uses lightweight CSS product visuals so it works immediately.
-For a real store, replace each `.product-image` block with your product photos.
+4. Replace the CSS model blocks with your actual product photos later if desired.
 
-## Important
-
-GitHub Pages hosts the website but does not provide:
-- payment processing
-- shopping cart/database
-- stock management
-- order fulfilment
-- domain ownership
-
-For a small starting business, WhatsApp + UPI/payment link + GitHub Pages is a simple low-cost setup.
+## GitHub Pages
+Create a public repository named `YOURUSERNAME.github.io`, upload `index.html`, `style.css`, `script.js`, then enable Settings → Pages → Deploy from branch → main → root.
