@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GV3D Print - 3D printed products and custom 3D printing services.">
+  <meta name="theme-color" content="#111827">
+  <title>GV3D Print | 3D Printing & Custom Prints</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home"><span class="brand-mark">GV</span><span>GV3D <b>Print</b></span></a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav id="nav-links">
+        <a href="#products">Products</a>
+        <a href="#custom">Custom Print</a>
+        <a href="#how">How It Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#products">Shop Prints</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">3D PRINTED • MADE TO ORDER</div>
+          <h1>Turn your ideas into <span>real objects.</span></h1>
+          <p class="hero-copy">Affordable 3D printed products and custom prints. From useful accessories to personalised creations, GV3D Print makes your ideas printable.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">Explore Products</a>
+            <a class="btn secondary" href="#custom">Request a Custom Print</a>
+          </div>
+          <div class="trust-row"><span>✓ Custom designs</span><span>✓ Made to order</span><span>✓ Local service</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="orb"></div>
+          <div class="hero-product">3D</div>
+          <div class="hero-caption"><strong>GV3D Print</strong><span>Print it. Use it. Love it.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow">PRODUCT CATALOGUE</div><h2>Popular 3D prints</h2></div>
+          <p>Replace these sample products with your actual catalogue and prices.</p>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="desk">Desk</button>
+          <button class="filter" data-filter="home">Home</button>
+          <button class="filter" data-filter="custom">Custom</button>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-category="desk">
+            <div class="product-image purple"><span>DESK</span></div>
+            <div class="product-info"><div class="tag">Desk</div><h3>Desk Organiser</h3><p>Compact organiser for pens, tools and small accessories.</p><div class="price-row"><strong>₹199</strong><button class="order-btn" data-product="Desk Organiser" data-price="₹199">Order on WhatsApp</button></div></div>
+          </article>
+          <article class="product-card" data-category="home">
+            <div class="product-image orange"><span>HOOK</span></div>
+            <div class="product-info"><div class="tag">Home</div><h3>Wall Hook Set</h3><p>Lightweight, practical hooks for everyday home use.</p><div class="price-row"><strong>₹149</strong><button class="order-btn" data-product="Wall Hook Set" data-price="₹149">Order on WhatsApp</button></div></div>
+          </article>
+          <article class="product-card" data-category="desk">
+            <div class="product-image blue"><span>STAND</span></div>
+            <div class="product-info"><div class="tag">Desk</div><h3>Phone Stand</h3><p>Minimal stand for phones, video calls and desk setups.</p><div class="price-row"><strong>₹179</strong><button class="order-btn" data-product="Phone Stand" data-price="₹179">Order on WhatsApp</button></div></div>
+          </article>
+          <article class="product-card" data-category="home">
+            <div class="product-image green"><span>PLANT</span></div>
+            <div class="product-info"><div class="tag">Home</div><h3>Mini Planter</h3><p>Small decorative planter for desks, shelves and gifts.</p><div class="price-row"><strong>₹129</strong><button class="order-btn" data-product="Mini Planter" data-price="₹129">Order on WhatsApp</button></div></div>
+          </article>
+          <article class="product-card" data-category="custom">
+            <div class="product-image pink"><span>NAME</span></div>
+            <div class="product-info"><div class="tag">Custom</div><h3>Personalised Name Plate</h3><p>Custom name plates made in your chosen colour and style.</p><div class="price-row"><strong>From ₹299</strong><button class="order-btn" data-product="Personalised Name Plate" data-price="From ₹299">Order on WhatsApp</button></div></div>
+          </article>
+          <article class="product-card" data-category="custom">
+            <div class="product-image dark"><span>YOUR STL</span></div>
+            <div class="product-info"><div class="tag">Custom</div><h3>Print Your STL</h3><p>Send your STL/3MF file and get a quotation for printing.</p><div class="price-row"><strong>Quote</strong><button class="order-btn" data-product="Custom STL Print" data-price="Quotation">Get a Quote</button></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section custom-section" id="custom">
+      <div class="container custom-grid">
+        <div>
+          <div class="eyebrow">CUSTOM 3D PRINTING</div>
+          <h2>Have an idea? Let’s print it.</h2>
+          <p>Send the details of your model, required quantity, material and preferred colour. We’ll review it and provide a quotation.</p>
+          <ul class="check-list"><li>STL / 3MF / OBJ files accepted</li><li>Prototype and small-batch printing</li><li>Colour and material options</li><li>Quotation before printing</li></ul>
+        </div>
+        <form class="quote-form" id="quote-form">
+          <label>Name<input name="name" required placeholder="Your name"></label>
+          <label>What do you want printed?<input name="item" required placeholder="e.g. keychain, prototype"></label>
+          <div class="two-col">
+            <label>Quantity<input name="quantity" type="number" min="1" value="1"></label>
+            <label>Material<select name="material"><option>PLA</option><option>PLA+</option><option>TPU</option><option>Other / Not sure</option></select></label>
+          </div>
+          <label>Colour preference<input name="colour" placeholder="e.g. Black / White / Any"></label>
+          <label>Message<textarea name="message" rows="4" placeholder="Tell us about size, deadline, file availability, etc."></textarea></label>
+          <button class="btn primary full" type="submit">Send Enquiry on WhatsApp</button>
+          <small>Your enquiry opens WhatsApp with the details filled in. No account is required on this website.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="center-head"><div class="eyebrow">SIMPLE PROCESS</div><h2>How it works</h2></div>
+        <div class="steps">
+          <div class="step"><b>01</b><h3>Choose</h3><p>Pick a product or send your own design.</p></div>
+          <div class="step"><b>02</b><h3>Get a quote</h3><p>We confirm material, quantity, price and delivery.</p></div>
+          <div class="step"><b>03</b><h3>We print</h3><p>Your model is prepared and 3D printed.</p></div>
+          <div class="step"><b>04</b><h3>Receive</h3><p>Collect locally or arrange delivery.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="contact">
+      <div class="container contact-grid">
+        <div><div class="eyebrow">GET IN TOUCH</div><h2>Ready to print?</h2><p>For product orders, bulk quantities or custom models, contact GV3D Print directly.</p></div>
+        <div class="contact-card"><div><span>WhatsApp</span><strong id="display-phone">+91 XXXXX XXXXX</strong></div><a class="btn light" id="main-whatsapp" href="#" target="_blank">Chat on WhatsApp</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> GV3D Print</span><span>3D printing • Custom prints • Made to order</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
