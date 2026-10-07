@@ -1,6 +1,6 @@
 // CHANGE ONLY THESE TWO SETTINGS
-const WHATSAPP_NUMBER="919XXXXXXXXX";
-const GOOGLE_FORM_URL="https://forms.google.com/";
+const WHATSAPP_NUMBER="919715737056";
+const GOOGLE_FORM_URL="https://forms.gle/9FuLeDEdFJSZoPUb9";
 
 const wa=t=>`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t)}`;
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
